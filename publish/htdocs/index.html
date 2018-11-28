@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreeKnight Live2D test page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="./depends/device.min.js"></script>
+    <script type="text/javascript" src="./depends/bundle.js"></script>
+    <script type="text/javascript" src="./js/control_panel.js"></script>
+</head>
+<body>
+    <div id="controlPanel">
+        <p>请选择模型: </p>
+        <select id="tmodelName" onchange="javascript:LoadModel()">
+            <option value="haru01" selected="selected">少女 1 号 基本</option>
+            <option value="haru02">少女 1 号 换装</option>
+            <option value="Gantzert_Felixander">战士动作</option>
+            <option value="hijiki">黑猫</option>
+        </select>
+    </div>
+    <div>
+        <canvas id="live2dCanvas" width="600" height="800"></canvas>
+    </div>
+</body>
+<script language="JAVASCRIPT">
+    init();
+</script>
+</html>
